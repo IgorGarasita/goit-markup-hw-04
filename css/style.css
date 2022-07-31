@@ -52,7 +52,7 @@ img {
   padding: 94px 0;
 }
 
-/*--------------------HEADER---------------------------*/
+/*----------------------------------------------------HEADER------------------------------------------------*/
 .header {
   background-color: var(--first-bg-color);
   border-bottom: 1px solid #ececec;
@@ -129,7 +129,7 @@ img {
   margin-right: 10px;
 }
 
-/*--------------------HERO---------------------------*/
+/*----------------------------------------------HERO-----------------------------------------------*/
 .hero {
   background-color: var(--sec-bg-color);
   text-align: center;
@@ -171,7 +171,7 @@ img {
 .hero-btn:focus {
   background-color: #188ce8;
 }
-/*-------------------Особенности---------------------------*/
+/*-----------------------------------Особенности---------------------------------------*/
 .specificity {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -179,8 +179,10 @@ img {
 .specificity-list {
   display: flex;
   gap: 30px;
+  width: 270px;
 }
 .specificity-post-title {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -197,8 +199,16 @@ img {
   color: var(--text-color);
   min-width: 270px;
 }
+.specificity-icon {
+  display: flex;
+  background-color: #f5f4fa;
+  height: 120px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
 
-/*-------------------ЧЕМ ЗАНИМАЕМСЯ---------------------------*/
+/*-------------------------------------------ЧЕМ ЗАНИМАЕМСЯ-------------------------------------------*/
 .activity {
   padding-top: 0;
   background-color: var(--first-bg-color);
@@ -217,7 +227,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-/*-------------------КОМАНДА---------------------------*/
+/*-------------------------------------------------КОМАНДА-----------------------------------------------*/
 .team {
   background-color: #f5f4fa;
   text-align: center;
@@ -288,10 +298,48 @@ img {
 .workers-soc-link:focus .workers-soc-icon {
   fill: #ffffff;
 }
-/*-------------------FOOTER---------------------------*/
+/*----------------------------------------------------Постоянные клиенты------------------------------------------*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.clients-icon {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.client-icon-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  align-items: center;
+  justify-content: center;
+}
+.client-icon-link:hover,
+.client-icon-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+/*-----------------------------------------------------FOOTER---------------------------------------------------------*/
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+}
+.container.footer {
+  display: flex;
 }
 .footer-logo {
   display: inline-block;
@@ -336,7 +384,40 @@ img {
 .tel:focus {
   color: var(--accent-color);
 }
-/*----------------HEROпортфолио------------------------------*/
+.footer-login {
+  margin-left: 70px;
+  margin-top: 12px;
+  height: 80px;
+}
+.footer-soc-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+  margin-bottom: 20px;
+  text-align: left;
+}
+.footer-soc {
+  display: flex;
+  gap: 10px;
+}
+.footer-soc-link {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--second-title-color);
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+/*------------------------------------------HEROпортфолио----------------------------------------------*/
 .projects {
   align-items: center;
 }
